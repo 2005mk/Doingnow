@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<body>
+        <h1>Calculate your BMI</h1>
+        <content>    
+        <div class="main">
+            <form  id="c">
+            <p>Age:<input type="number" placeholder="Age" required></p>
+            <p id="W">Weight:<input type="number" placeholder="Weight in (kg)" required></p>
+            <p id="H">Height:<input type='number' placeholder="Height in (CM)" required></p>
+            <button id="b" onclick="BMI()">Calculate</button>
+            </form>
+            <div id="result">
+                <p></p>
+            </div>
+        </div>
+    </content>  
+    <footer>
+        <p>Email:kmugeis2005@gmail.com</p><p>Ph:7010954802</p>
+    </footer>
+   
+    <script>
+       function BMI(){
+        let W=document.getElementById('W').value;
+        let H=document.getElementById('H').value;
+        let R;
+        let k;
+        k=H*H;
+        R=W/k;
+        alert(R);
+       }
+
+    </script>
+    <style>
+        #b{
+            background-color: #054c8f;
+            justify-content: center;
+            display: inline;
+            border-radius:2px;
+            color:white;
+            width:100px;
+            height: 40px;
+            cursor: pointer;
+
+
+        }
+        body{
+           background-color: beige;
+           padding-left:40px ;
+        }
+        h1{
+            display:flex;
+            text-align:"centre";
+            justify-content: center;
+            align-items: center;
+            color: #054c8f;
+        }
+        content{
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            padding-top: 30px;
+            color:white;
+        }
+        .main{
+            padding-right:20px ;
+            color:#054c8f;
+            display:flex;
+            width:400px;
+            height: 200px;
+            text-align:center;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgb(252, 252, 252);
+            border-radius:2%;
+            border-color:rgb(131, 51, 51);
+            background-color: transparent;
+
+        }
+        footer{
+            background-color: rgb(171, 142, 69);
+            color: #054c8f;
+        }
+        #set{
+            padding-bottom:140px ;
+        }
+
+    </style>
+</body>
+</html>
